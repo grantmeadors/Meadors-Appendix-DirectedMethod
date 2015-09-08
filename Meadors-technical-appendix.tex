@@ -1,6 +1,70 @@
-\section*{Extraneous material for technical notes}
-\textbf{REMOVE FROM FINAL PAPER:}
-\textit{intended for technical notes in internal use}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    INSTITUTE OF PHYSICS PUBLISHING                                   %
+%                                                                      %
+%   `Preparing an article for publication in an Institute of Physics   %
+%    Publishing journal using LaTeX'                                   %
+%                                                                      %
+%    LaTeX source code `ioplau2e.tex' used to generate `author         %
+%    guidelines', the documentation explaining and demonstrating use   %
+%    of the Institute of Physics Publishing LaTeX preprint files       %
+%    `iopart.cls, iopart12.clo and iopart10.clo'.                      %
+%                                                                      %
+%    `ioplau2e.tex' itself uses LaTeX with `iopart.cls'                %
+%                                                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+% First we have a character check
+%
+% ! exclamation mark    " double quote  
+% # hash                ` opening quote (grave)
+% & ampersand           ' closing quote (acute)
+% $ dollar              % percent       
+% ( open parenthesis    ) close paren.  
+% - hyphen              = equals sign
+% | vertical bar        ~ tilde         
+% @ at sign             _ underscore
+% { open curly brace    } close curly   
+% [ open square         ] close square bracket
+% + plus sign           ; semi-colon    
+% * asterisk            : colon
+% < open angle bracket  > close angle   
+% , comma               . full stop
+% ? question mark       / forward slash 
+% \ backslash           ^ circumflex
+%
+% ABCDEFGHIJKLMNOPQRSTUVWXYZ 
+% abcdefghijklmnopqrstuvwxyz 
+% 1234567890
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+\documentclass[12pt]{iopart}
+%\newcommand{\gguide}{{\it Preparing graphics for IOP Publishing journals}}
+%Uncomment next line if AMS fonts required
+\usepackage{iopams}  
+\usepackage{epsfig}
+\usepackage{verbatim}
+\usepackage{hyperref}
+\usepackage{harvard}
+\usepackage{url}
+%\usepackage{graphicx}
+\begin{document}
+
+\title[TwoSpect: Scorpius X-1]{TwoSpect: search for a simulated Scorpius X-1}
+
+\author{Grant David Meadors$^1$, Evan Goetz$^2$, Keith Riles$^2$}
+
+\address{$^1$Max-Planck-Institut f\"{u}r Gravitationsphysik, Am M\"{u}hlenberg 1, 14476 Potsdam and Callinstra{\ss}e 38, 30167 Hannover, Germany}
+\address{$^2$University of Michigan, 450 Church Street, Ann Arbor, Michigan 48109, USA}
+\ead{grant.meadors@aei.mpg.de}
+\vspace{10pt}
+%\begin{indented}
+%\item[]February 2014
+%\end{indented}
+\date{\today}
+
+\section{Technical notes}
 
 \begin{figure}
 \begin{center}
@@ -508,3 +572,12 @@ Prior simulations have shown that, when $P$ and $(\alpha,\delta)$ are fixed, the
 Frequency $f$ spacing of $1/2T_\mathrm{SFT}$ is sufficient, and $a \sin i$ is chosen such that modulation depth $\Delta f_\mathrm{obs}$ is spaced at $1/4T_\mathrm{SFT}$.
 For a fuller analysis, one can calculate the statistical mismatch metric~\cite{Brady1998}, $g_{ij}$.
 Fixed grid spacing corresponds to a flat mismatch metric.
+
+\section*{References}
+\bibliographystyle{jphysicsB}
+\bibliography{bibliography}
+
+%\include{Meadors-technical-appendix}
+
+
+\end{document}
